@@ -17,7 +17,7 @@ parser.add_argument('-rr', '--results_root', type=str, default='./results',
 parser.add_argument('-ln', '--loader_name', type=str, default='toy',
                     help='The name for your dataset.',
                     choices=['toy', 'mnist', 'cifar10', 'cifar100',
-                             'fmnist', 'cifar100_tpu',
+                             'fmnist', 'cifar100_tpu', 'image',
                              'cifar10_noisy', 'fmnist_noisy', 'tiny_imagenet'])
 parser.add_argument('-rt', '--root', type=str, default='./data/',
                     help='The root path for stored data.')

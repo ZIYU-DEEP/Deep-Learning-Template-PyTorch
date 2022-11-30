@@ -3,6 +3,7 @@ Title: main_loading.py
 Description: The all-in-one loading functions.
 """
 from .loader_toy import ToyLoader
+from .loader_image import ImageLoader
 from .loader_mnist import MNISTLoader
 from .loader_fmnist import FashionMNISTLoader
 from .loader_cifar10 import CIFAR10Loader
@@ -30,8 +31,8 @@ def load_dataset(loader_name: str='toy',
 
     if loader_name == 'fmnist':
         return FashionMNISTLoader(root,
-                                 filename,
-                                 random_state)
+                                  filename,
+                                  random_state)
 
     if loader_name == 'cifar10':
         return CIFAR10Loader(root,
@@ -48,5 +49,9 @@ def load_dataset(loader_name: str='toy',
                                   filename,
                                   random_state,
                                   download)
+
+    if loader_name == 'image':
+        return ImageLoader(root,
+                           filename)
 
     return None

@@ -1,7 +1,6 @@
 """
 Title: cifar10_loader.py
 Description: The loader classes for the CIFAR-10 datasets
-Note: Haven't test the file yet! (Feb 13, 2022)
 """
 
 from .loader_base import BaseLoader
